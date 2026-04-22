@@ -2,7 +2,8 @@ import streamlit as st
 
 # Page Title
 st.title("🚀 My Smart Docker App")
-
+# add this line in your app
+st.write("CI/CD is working 🚀")
 # Sidebar Menu
 option = st.sidebar.selectbox(
     "Choose Feature",
