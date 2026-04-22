@@ -1,9 +1,0 @@
-steps:
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'asia-south1-docker.pkg.dev/$PROJECT_ID/streamlit-repo/app', '.']
-
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'asia-south1-docker.pkg.dev/$PROJECT_ID/streamlit-repo/app']
-
-images:
-  - 'asia-south1-docker.pkg.dev/$PROJECT_ID/streamlit-repo/app'
