@@ -9,7 +9,10 @@ RUN pip install --no-cache-dir --upgrade pip \
 
 COPY . .
 
+# 🔥 IMPORTANT
 ENV PORT=8080
+
 EXPOSE 8080
 
+# 🔥 USE PORT VARIABLE (this is key fix)
 CMD ["streamlit", "run", "app1.py", "--server.port=8080", "--server.address=0.0.0.0"]
